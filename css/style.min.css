@@ -145,9 +145,17 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   & > h2 {
+    margin-bottom: 20px;
     font-size: 5.25rem;
+    overflow: hidden;
+    & > span {
+      position: absolute;
+      display: block;
+      inset: 0;
+    }
   }
   & > h3 {
+    line-height: 1.5;
     font-size: 3.5rem;
     & > span {
       text-decoration: line-through;
