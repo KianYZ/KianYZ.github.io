@@ -98,7 +98,7 @@ body {
       content: "";
       width: 100%;
       height: 2px;
-      background-color: #ffffff;
+      background-color: inherit;
     }
     &::after {
       position: absolute;
@@ -108,7 +108,7 @@ body {
       content: "";
       width: 100%;
       height: 2px;
-      background-color: #ffffff;
+      background-color: inherit;
     }
   }
 }
@@ -119,6 +119,9 @@ body {
 }
 .header .nav-items.is-open {
   display: flex;
+}
+.inverted :where(.header-name, .nav-items > li > a, .hamburger > span) {
+
 }
 
 /**
@@ -145,6 +148,7 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   & > h2 {
+    height: 94px;
     margin-bottom: 20px;
     font-size: 5.25rem;
     overflow: hidden;
@@ -152,6 +156,7 @@ body {
       position: absolute;
       display: block;
       inset: 0;
+      line-height: 1;
     }
   }
   & > h3 {
