@@ -121,7 +121,7 @@ body {
   display: flex;
 }
 .inverted :where(.header-name, .nav-items > li > a) {
-  color: #2d2d2d
+  color: #2d2d2d !important;
 }
 .inverted .hamburger > span {
   background-color: #2d2d2d;
